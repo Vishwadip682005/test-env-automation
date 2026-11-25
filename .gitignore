@@ -5,3 +5,4 @@ private_key
 *.tfstate
 *.tfstate.backup
 .terraform/
+terraform.tfvars
