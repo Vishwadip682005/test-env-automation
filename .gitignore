@@ -6,3 +6,4 @@ private_key
 *.tfstate.backup
 .terraform/
 terraform.tfvars
+ansible/inventory-aws
