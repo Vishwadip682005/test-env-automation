@@ -1,0 +1,22 @@
+---
+- name: Install Apache
+  apt:
+    name: apache2
+    state: present
+    update_cache: yes
+
+- name: Make sure Apache is running and starts on boot
+  service:
+    name: apache2
+    state: started
+    enabled: yes
+
+- name: Copy the sample web app
+  copy:
+    src: "{{ item }}"
+    dest: "/var/www/html/{{ item }}"
+    mode: '0644'
+  loop:
+    - index.html
+    - dashboard.html
+    - about.html

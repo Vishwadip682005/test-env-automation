@@ -1,0 +1,7 @@
+*.pem
+*vagrant_key*
+private_key
+.vagrant/
+*.tfstate
+*.tfstate.backup
+.terraform/

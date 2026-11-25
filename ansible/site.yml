@@ -1,0 +1,7 @@
+---
+- name: Configure the test server
+  hosts: testserver
+  become: yes
+  roles:
+    - webapp
+    - selenium
